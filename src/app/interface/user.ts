@@ -3,9 +3,9 @@ import { Role } from "./role"
 
 export interface User {
     id: number
-    username: String
-    password: String
-    email: String
+    username: string
+    password: string
+    email: string
     verify: Boolean
     roles: Array<Role>
     account_non_locked: Boolean
