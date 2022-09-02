@@ -1,16 +1,17 @@
 header{
     border-radius: 1px solid;
 
-    .food-icon-svg{
-        height: 50px;
+    .food-icon{
+        height: 70px;
         padding: 8px 8px 8px 0;
-        width: 50px;
+        width: 70px;
     }
     
     .food-text{        
         font-weight: 700;
         height: 50px;
-        width: 50px;    
+        width: 50px; 
+        font-size: 18px;   
     }
     .logo{
         text-decoration: none;
@@ -40,11 +41,12 @@ header{
         background-color: #0079D3;
         border-color: #0079D3;
         color: aliceblue;
+
+        &:hover{
+            opacity: 0.6;
+        }
     }
     
-    .sign-up:hover{
-        opacity: 0.6;
-    }
     
     .userdetails{    
         background-color: transparent;
@@ -65,11 +67,12 @@ header{
         padding: 3px 16px;
         opacity: 1;
         border: 0px;
+
+        &:hover{
+            border: 1px solid;
+        }
     }
-    
-    .userdetails:hover{
-        border: 1px solid;
-    }
+
     
     .dropdown-item{
         background-color: #f8f9fa;
@@ -78,10 +81,10 @@ header{
         line-height: 18px;
         display: inline-block;
         vertical-align: middle;
-    }
-    
-    .dropdown-item:hover{
-        background-color: #0079D3;
+
+        &:hover{
+            background-color: #0079D3;
+        }
     }
     
     .dropdown-menu{
