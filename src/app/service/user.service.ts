@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { User } from '../interface/user';
 import { LoginUser } from '../interface/loginUser';
 import { AuthToken } from '../interface/authToken';
+import { SignupUser } from '../interface/signupUser';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,12 @@ export class UserService {
     };
 
     return this.http
-    .post<AuthToken>(`${baseURL}/api/v1/user/login`, loginUser, options)
+    .post<AuthToken>(`${baseURL}/user/login`, loginUser, options)
+  }
+
+  public signup(signupUser: SignupUser): Observable<User>{
+    console.log(`${baseURL}/user/addUser`)
+    return this.http.post<User>(`${baseURL}/user/addUser`, signupUser)
   }
 
   public logout() {
