@@ -1,23 +1,27 @@
-header{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+header {
     border-radius: 1px solid;
 
-    .food-icon{
+    .food-icon {
         height: 70px;
         padding: 8px 8px 8px 0;
         width: 70px;
     }
-    
-    .food-text{        
+
+    .food-text {
         font-weight: 700;
         height: 50px;
-        width: 50px; 
-        font-size: 18px;   
+        width: 50px;
+        font-size: 18px;
     }
-    .logo{
+
+    .logo {
         text-decoration: none;
     }
-    
-    .login, .sign-up{    
+
+    .login,
+    .sign-up {
         background-color: transparent;
         border-color: #0079D3;
         color: #0079D3;
@@ -34,21 +38,21 @@ header{
         line-height: 24px;
         text-transform: uppercase;
         padding: 3px 16px;
-        opacity: 1;  
+        opacity: 1;
     }
-    
-    .sign-up{
+
+    .sign-up {
         background-color: #0079D3;
         border-color: #0079D3;
         color: aliceblue;
 
-        &:hover{
+        &:hover {
             opacity: 0.6;
         }
     }
-    
-    
-    .userdetails{    
+
+
+    .userdetails {
         background-color: transparent;
         border-color: #0079D3;
         color: #0079D3;
@@ -68,13 +72,13 @@ header{
         opacity: 1;
         border: 0px;
 
-        &:hover{
+        &:hover {
             border: 1px solid;
         }
     }
 
-    
-    .dropdown-item{
+
+    .dropdown-item {
         background-color: #f8f9fa;
         font-size: 14px;
         font-weight: 500;
@@ -82,16 +86,16 @@ header{
         display: inline-block;
         vertical-align: middle;
 
-        &:hover{
+        &:hover {
             background-color: #0079D3;
         }
     }
-    
-    .dropdown-menu{
+
+    .dropdown-menu {
         background-color: #f8f9fa;
     }
-    
-    .account-icon{
+
+    .account-icon {
         border-radius: 4px;
         float: left;
         margin-right: 5px;

@@ -17,12 +17,16 @@ export class UserService {
 
   public login(loginUser: LoginUser): Observable<AuthToken> {
 
+    var formBody = Object.keys(loginUser).map(key => 
+      encodeURIComponent(key) + '=' + encodeURIComponent(loginUser[key as keyof LoginUser])
+    ).join('&')
+
     let options = {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
     };
 
     return this.http
-    .post<AuthToken>(`${baseURL}/user/login`, loginUser, options)
+    .post<AuthToken>(`${baseURL}/user/login`, formBody, options)
   }
 
   public signup(signupUser: SignupUser): Observable<User>{

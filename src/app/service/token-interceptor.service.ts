@@ -2,6 +2,7 @@ import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/c
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import * as moment from 'moment';
+import { TokenService } from './token.service';
 
 @Injectable({
   providedIn: 'root'
